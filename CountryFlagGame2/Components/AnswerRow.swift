@@ -13,7 +13,7 @@ struct AnswerRow: View {
     @EnvironmentObject var gameManager: GameManager
     var body: some View {
         HStack(spacing: 20, content: {
-            Image(systemName: "cirlce.fill")
+            Image(systemName: "circle.fill")
                 .font(.caption)
             Text(answer.text)
                 .font(.title)

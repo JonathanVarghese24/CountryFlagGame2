@@ -17,24 +17,26 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(.yellow)
-                    Text("Ready to show off your skills?")
+                    Text("Ready to test your skills?")
                         .foregroundColor(.yellow)
                 })
                 NavigationLink {
                     QuestionView()
                         .environmentObject(gameManager)
-                } label: {
+                }label: {
                     CustomButton(text: "Start")
                 }
+                
             })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)
             .background(.cyan)
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
